@@ -16,13 +16,15 @@ Route::prefix('admin1')->group(function () {
     )->name('index');
 
     Route::prefix('category')->name('category.')->group(function () {
-Route::get('/cat_list', [AdminController::class,'category_list']
-)->name('category_list');
+    
+Route::get('/', [AdminController::class,'category_list']
+)->name('list');
 
 Route::get('/cat_add', [AdminController::class,'category_add']
-)->name('category_add');
-Route::get('/cat_edit', [AdminController::class,'category_edit']
-)->name('category_edit');
+)->name('add');
+Route::get('/cat_edit/{id}', [AdminController::class,'category_edit']
+)->name('edit');
+
     });
 });
 

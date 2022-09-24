@@ -23,8 +23,8 @@
                                         <tbody>
                                             <tr>
                                                 <td> Snikers </td>
-                                                <td class="btn btn-info"> <a href="{{route('category_edit')}}">Show </a> </td>
-                                                <td class="btn btn-info"> <a href="{{route('category_edit')}}">Edit </a> </td>
+                                                <td class="btn btn-info"> <a href="{{route('category.edit',2)}}">Show </a> </td>
+                                                <td class="btn btn-info"> <a href="{{route('category.edit',2)}}">Edit </a> </td>
 
                                                 <td class="btn btn-danger">Delete</td>
                                             </tr>

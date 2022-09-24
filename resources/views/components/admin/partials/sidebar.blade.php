@@ -27,13 +27,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('category_list') }}">
+              <a class="nav-link" href="{{ route('category.list') }}">
                 <span class="menu-title">Category</span>
                 <i class="mdi mdi-format-list-bulleted menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('category_add') }}">
+              <a class="nav-link" href="{{ route('category.add') }}">
                 <span class="menu-title">Category Add</span>
                 <i class="mdi mdi-chart-bar menu-icon"></i>
               </a>

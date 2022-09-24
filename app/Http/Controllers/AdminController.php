@@ -18,8 +18,9 @@ class AdminController extends Controller
         return view('admin.category.categoryadd');
     }
 
-    public function category_edit(){
+    public function category_edit($userId){
         return view('admin.category.categoryedit');
+        
     }
 
 }
