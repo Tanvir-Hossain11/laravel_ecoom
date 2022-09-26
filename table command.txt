@@ -1,1 +1,17 @@
- php artisan make:migration create_products_table
+ "creating table
+....
+php artisan make:migration create_products_table
+
+"
+
+
+"for alter table.or create new column in existing table
+....
+
+php artisan make:migration add_brand_to_categories_table --table="categories"
+
+
+"
+
+
+php artisan migrate:rollback
