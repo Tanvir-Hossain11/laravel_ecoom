@@ -30,7 +30,7 @@ return new class extends Migration
      * @return void
      */
     public function down()
-    {
+    {echo '3 no file';
         Schema::dropIfExists('failed_jobs');
     }
 };

@@ -11,8 +11,13 @@ return new class extends Migration
      *
      * @return void
      */
+
+    
     public function up()
+   
     {
+        // Schema::dropIfExists('personal_access_tokens');
+        echo 'up method working';
         Schema::create('personal_access_tokens', function (Blueprint $table) {
             $table->id();
             $table->morphs('tokenable');
@@ -31,7 +36,7 @@ return new class extends Migration
      * @return void
      */
     public function down()
-    {
+    {  echo '4 no file';
         Schema::dropIfExists('personal_access_tokens');
     }
 };
